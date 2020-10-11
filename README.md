@@ -15,17 +15,64 @@ java -jar target/mancala.jar
 
 ## Exercise the application
 
+
+### Create a game
 ```
-curl -X GET http://localhost:8080/greet
-{"message":"Hello World!"}
+*  curl  -v -X POST -H "Content-Type: application/json" http://0.0.0.0:8080/games
+> POST /games HTTP/1.1
+> Host: 0.0.0.0:8080
+> User-Agent: curl/7.70.0
+> Accept: */*
+> Content-Type: application/json
+>
+< HTTP/1.1 201 Created
+< Content-Length: 0
+< Date: Mon, 12 Oct 2020 01:25:41 +0300
+< Location: http://127.0.0.1:8080/2
+< connection: keep-alive
+<
+* Connection #0 to host 0.0.0.0 left intact
+```
 
-curl -X GET http://localhost:8080/greet/Joe
-{"message":"Hello Joe!"}
+### See status of a game
+```
+* curl  -v -X GET -H "Content-Type: application/json" http://0.0.0.0:8080/games/1
+* Connected to 0.0.0.0 (127.0.0.1) port 8080 (#0)
+> GET /games/1 HTTP/1.1
+> Host: 0.0.0.0:8080
+> User-Agent: curl/7.70.0
+> Accept: */*
+> Content-Type: application/json
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+< Date: Mon, 12 Oct 2020 01:23:32 +0300
+< connection: keep-alive
+< content-length: 108
+<
+* Connection #0 to host 0.0.0.0 left intact
+{"id":1,"status":{"1":6,"2":6,"3":6,"4":6,"5":6,"6":6,"7":0,"8":6,"9":6,"10":6,"11":6,"12":6,"13":6,"14":0}}
 
-curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Hola"}' http://localhost:8080/greet/greeting
+```
+### Make a move
+```
 
-curl -X GET http://localhost:8080/greet/Jose
-{"message":"Hola Jose!"}
+*  curl -v -X PUT -H "Content-Type: application/json" http://0.0.0.0:8080/games/2/pits/1
+*   Trying 0.0.0.0:8080...
+* Connected to 0.0.0.0 (127.0.0.1) port 8080 (#0)
+> PUT /games/2/pits/1 HTTP/1.1
+> Host: 0.0.0.0:8080
+> User-Agent: curl/7.70.0
+> Accept: */*
+> Content-Type: application/json
+>
+< HTTP/1.1 202 Accepted
+< Content-Length: 0
+< Date: Mon, 12 Oct 2020 01:27:06 +0300
+< Location: http://127.0.0.1:8080/2
+< connection: keep-alive
+<
+
 ```
 
 ## Try health and metrics
