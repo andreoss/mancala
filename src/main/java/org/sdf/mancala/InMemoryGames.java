@@ -17,7 +17,7 @@ public final class InMemoryGames implements Games {
         final int id = this.count.incrementAndGet();
         final Game game = new GameOf(
             id,
-            new BoardForTwo(),
+            new BoardForTwo(6, 14),
             new PlayersOf(
                 new PlayerOf("first"),
                 new PlayerOf("second")
