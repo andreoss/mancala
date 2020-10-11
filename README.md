@@ -1,9 +1,12 @@
+<img src="/logo.webp" width="92px"/>
+
 # Mancala
 [![Hits-of-Code](https://hitsofcode.com/github/andreoss/mancala)](https://hitsofcode.com/view/github/andreoss/mancala)
 [![codecov](https://codecov.io/gh/andreoss/mancala/branch/master/graph/badge.svg)](https://codecov.io/gh/andreoss/mancala)
 [![Build Status](https://travis-ci.com/andreoss/mancala.svg?branch=master)](https://travis-ci.com/andreoss/mancala)
 
 Simple implementation of [Mancala](https://en.wikipedia.org/wiki/Mancala).
+
 
 ## Build and run
 
