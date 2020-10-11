@@ -1,4 +1,5 @@
 # Mancala
+[![Hits-of-Code](https://hitsofcode.com/github/andreoss/mancala)](https://hitsofcode.com/view/github/andreoss/mancala)
 
 Simple implementation of [Mancala](https://en.wikipedia.org/wiki/Mancala).
 
@@ -128,12 +129,12 @@ docker run --rm -p 8080:8080 mancala-native:latest
 
 ## Build a Java Runtime Image using jlink
 
-You can build a custom Java Runtime Image (JRI) containing the application jars and the JDK modules 
+You can build a custom Java Runtime Image (JRI) containing the application jars and the JDK modules
 on which they depend. This image also:
 
-* Enables Class Data Sharing by default to reduce startup time. 
-* Contains a customized `start` script to simplify CDS usage and support debug and test modes. 
- 
+* Enables Class Data Sharing by default to reduce startup time.
+* Contains a customized `start` script to simplify CDS usage and support debug and test modes.
+
 You can build a custom JRI in two different ways:
 * Local
 * Using Docker
