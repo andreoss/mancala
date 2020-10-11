@@ -3,7 +3,6 @@ package org.sdf.mancala.mp;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import org.eclipse.microprofile.openapi.annotations.OpenAPIDefinition;
-import org.eclipse.microprofile.openapi.annotations.info.Contact;
 import org.eclipse.microprofile.openapi.annotations.info.Info;
 
 /**
@@ -14,14 +13,9 @@ import org.eclipse.microprofile.openapi.annotations.info.Info;
 @ApplicationPath("/")
 @OpenAPIDefinition(
     info = @Info(
-        title = "The Kalah Game",
-        version = "1.0.0",
-        contact = @Contact(
-            name = "Phillip Kruger",
-            email = "phillip.kruger@phillip-kruger.com",
-            url = "http://www.phillip-kruger.com"
-        )
+        title = "The Game of Mancala",
+        version = "1.0.0"
     )
 )
-public final class Kalaha extends Application {
+public final class Mancala extends Application {
 }
