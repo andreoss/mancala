@@ -18,6 +18,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.sdf.mancala.Game;
 import org.sdf.mancala.Games;
 
@@ -25,6 +26,8 @@ import org.sdf.mancala.Games;
  * Endpoint.
  */
 @RequestScoped
+@Path("/games")
+@Tag(name = "Game endpoint")
 public class GamesResource implements GamesApi {
     private static final JsonBuilderFactory JSON =
         Json.createBuilderFactory(Collections.emptyMap());
