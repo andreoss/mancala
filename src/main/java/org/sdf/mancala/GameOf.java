@@ -46,7 +46,6 @@ public final class GameOf implements Game {
             if (lastInEmptyPit) {
                 final Pit adjacent = this.board.oppositePit(this.shift(pit, count));
                 if (adjacent.count() > 0) {
-                    final int marbles = last.count() + adjacent.count();
                     house.putFrom(last);
                     house.putFrom(adjacent);
                 }

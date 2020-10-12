@@ -1,6 +1,5 @@
 package org.sdf.mancala.mp;
 
-import io.helidon.config.Config;
 import java.net.URI;
 import java.util.Collections;
 import javax.enterprise.context.RequestScoped;
@@ -17,7 +16,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
-import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.sdf.mancala.Game;
 import org.sdf.mancala.Games;
@@ -37,17 +35,14 @@ public class GamesResource implements GamesApi {
      */
     private final Games games;
 
-    private final Config conf;
-
     /**
      * Ctor & injection point.
      *
      * @param games The games
      */
     @Inject
-    public GamesResource(final Config conf, final Games games) {
+    public GamesResource(final Games games) {
         this.games = games;
-        this.conf = conf;
     }
 
     /**
@@ -110,13 +105,11 @@ public class GamesResource implements GamesApi {
     @Override @SuppressWarnings("checkstyle:designforextension")
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    @APIResponses({
-        @APIResponse(
-            name = "normal",
-            responseCode = "201",
-            description = "Game created"
-        )
-    })
+    @APIResponse(
+        name = "normal",
+        responseCode = "201",
+        description = "Game created"
+    )
     public Response startGame() {
         final Game game = this.games.start();
         return Response.created(
