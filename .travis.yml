@@ -2,11 +2,9 @@ language: java
 addons:
   sonarcloud:
     organization: andreoss
-    token:
-      secure: "A5+s9aoIcOrBrWo47o8LeWO8w4bqJU1StuKijAlg5HvZjGr8YC+6DlXpX31pbn//MvStSYZYjqakpUae3vBZ87exGmKnD5KG5v1uY14yLHuo5xtEXbAOoBkGzJKwhtXH0DQWrqMNm18Ph5wzGZN6nNUe/Vh6qm2t2P8PpMzux07yKil2gP9zNQNOhsLdeYAttzJ+UPDJhEGyZft+9jrKmEra8qQL01Qp2JJrYw9oIRJXmFH5qA6e+HIv8xZz8HViB+1HHNhTc3odq7k7WQ9VJADocygkVSBrom66seSs3kIPOCQSDwwiRMXRSK9IVq1yZ7DpLH7eB+agmgxpkoxuJUb67h0GVvdHJhUtGyfgjay5OLQ+yu2TufNRXUCeDiLqnHulAuevKFdWGdHhyo2DSv/eBfKPn6G0ETZPaEJjSg9oIL+XbCdIo08TedMe8eKFA5EL0Uw+RTjpTi97evBus6MaW7vDOyc+51KZLJit25FNwIOzvZEs/A+HjZ8ADjrMg8b1E4krXWGHGD1M/X5WaRp1F8fWHCHZ1GJETh/hrABDZIWqdiuyqiTbMkr+kCp00BrEvjPJQjlvTbI4HYgAj6L6QeyXrG0hgTgJhg5kVYCxn+YZtkb95wVgNt0oTxGy1mltZL4eReCNIDHqpMOVS3Hb6BLEZJGMEGyqjn0oGNM="
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=andreoss_mancala
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=andreoss_mancala -Dsonar.login=3c44f975ecf68f28d06711320a533a58ecd270b9
 
 cache:
   directories:
