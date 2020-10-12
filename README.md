@@ -17,7 +17,7 @@ java -jar target/mancala.jar
 ```
 
 ## Exercise the application
-
+Swagger is available at  http://localhost:8080/openapi-ui/index.html
 
 ### Create a game
 ```
