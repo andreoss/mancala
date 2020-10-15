@@ -4,16 +4,30 @@ import java.util.concurrent.atomic.AtomicInteger;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
+/**
+ * Pit on board.
+ */
 @RequiredArgsConstructor
 @ToString
 public final class PitOf implements Pit {
 
+    /**
+     * Position of a pit.
+     */
     private final int id;
 
+    /**
+     * Marbles inside.
+     */
     private final AtomicInteger cnt;
 
-    public PitOf(final int id, final int marbles) {
-        this(id, new AtomicInteger(marbles));
+    /**
+     * Ctor.
+     * @param position Position.
+     * @param marbles Number of marbles.
+     */
+    public PitOf(final int position, final int marbles) {
+        this(position, new AtomicInteger(marbles));
     }
 
     @Override

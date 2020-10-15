@@ -4,14 +4,29 @@ import java.util.Collection;
 import java.util.concurrent.atomic.AtomicBoolean;
 import lombok.RequiredArgsConstructor;
 
+/**
+ * Game.
+ */
 @RequiredArgsConstructor
 public final class GameOf implements Game {
+    /**
+     * Id.
+     */
     private final int id;
 
+    /**
+     * Board.
+     */
     private final Board board;
 
+    /**
+     * Players.
+     */
     private final Players players;
 
+    /**
+     * Flag for game status.
+     */
     private final AtomicBoolean finished = new AtomicBoolean(false);
 
     @Override
@@ -30,7 +45,9 @@ public final class GameOf implements Game {
             throw new IllegalStateException("game is finished");
         }
         if (this.board.isHouse(pit)) {
-            throw new IllegalStateException(String.format("%d is a house", pit));
+            throw new IllegalStateException(
+                String.format("%d is a house", pit)
+            );
         }
         final Pit played = this.board.pit(pit);
         final int count = played.count();
@@ -44,7 +61,9 @@ public final class GameOf implements Game {
         if (!this.board.isHouse(pit + count)) {
             this.players.turn();
             if (lastInEmptyPit) {
-                final Pit adjacent = this.board.oppositePit(this.shift(pit, count));
+                final Pit adjacent = this.board.oppositePit(
+                    this.shift(pit, count)
+                );
                 if (adjacent.count() > 0) {
                     house.putFrom(last);
                     house.putFrom(adjacent);
@@ -60,6 +79,12 @@ public final class GameOf implements Game {
         }
     }
 
+    /**
+     * Shift position.
+     * @param pit Start from this pit.
+     * @param count Positions to shift.
+     * @return Position
+     */
     private int shift(final int pit, final int count) {
         return (pit + count) % this.board.size();
     }

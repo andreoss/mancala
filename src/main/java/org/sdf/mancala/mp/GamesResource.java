@@ -27,6 +27,9 @@ import org.sdf.mancala.Games;
 @Path("/games")
 @Tag(name = "Game endpoint")
 public class GamesResource implements GamesApi {
+    /**
+     * Json factory.
+     */
     private static final JsonBuilderFactory JSON =
         Json.createBuilderFactory(Collections.emptyMap());
 
@@ -38,11 +41,11 @@ public class GamesResource implements GamesApi {
     /**
      * Ctor & injection point.
      *
-     * @param games The games
+     * @param gms The games
      */
     @Inject
-    public GamesResource(final Games games) {
-        this.games = games;
+    public GamesResource(final Games gms) {
+        this.games = gms;
     }
 
     /**
@@ -50,7 +53,8 @@ public class GamesResource implements GamesApi {
      *
      * @return {@link JsonObject}
      */
-    @Override @SuppressWarnings("checkstyle:designforextension")
+    @Override
+    @SuppressWarnings("checkstyle:designforextension")
     @GET
     @Path("/{gid}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -61,6 +65,11 @@ public class GamesResource implements GamesApi {
         return Response.ok(this.gameAsJson(this.games.find(id))).build();
     }
 
+    /**
+     * Write game as json.
+     * @param game A game
+     * @return json
+     */
     private JsonObject gameAsJson(final Game game) {
         final var status = JSON.createObjectBuilder();
         for (int i = 0; i < game.board().size(); i++) {

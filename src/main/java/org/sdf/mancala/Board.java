@@ -27,6 +27,11 @@ public interface Board {
      */
     boolean isHouse(int position);
 
+    /**
+     * Pit on the opposite side.
+     * @param pit Pit position.
+     * @return Opposite pit to the position.
+     */
     Pit oppositePit(int pit);
 
     /**

@@ -4,6 +4,10 @@ package org.sdf.mancala;
  * Game.
  */
 public interface Game {
+    /**
+     * Game id.
+     * @return Id number
+     */
     int id();
 
     /**
@@ -19,9 +23,15 @@ public interface Game {
      */
     Board board();
 
+    /**
+     * Is game finished?
+     * @return true if yes
+     */
     boolean isFinished();
 
+    /**
+     * Players of this game.
+     * @return players
+     **/
     Players players();
 }
-
-

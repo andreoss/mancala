@@ -9,36 +9,52 @@ import java.util.stream.Stream;
 import lombok.RequiredArgsConstructor;
 
 /**
- * Board for two players
+ * Board for two players.
+ *
+ * Two player can play this board.
+ * Each has a house, which is empty at start.
  */
 @RequiredArgsConstructor
-public class BoardForTwo implements Board {
-    private final List<Pit> pits;
+public final class BoardForTwo implements Board {
 
+    /**
+     * Initial amount of marbles.
+     */
+    private static final int AMOUNT = 4;
+
+    /**
+     * Amount of pits (houses included).
+     */
+    private static final int PITS = 14;
+
+    /**
+     * The pits.
+     */
+    private final List<Pit> pits;
 
     /**
      * Default ctor.
      */
     public BoardForTwo() {
-        this(4, 14);
+        this(AMOUNT, PITS);
     }
 
     /**
      * Ctor.
-     * @param amount Amount of marbles in each pit.
-     * @param pits Amount of pits (including houses).
+     * @param marbles Amount of marbles in each pit.
+     * @param pts Amount of pits (including houses).
      */
-    public BoardForTwo(final int amount, final int pits) {
+    public BoardForTwo(final int marbles, final int pts) {
         this(
             Stream.of(
                 IntStream
-                    .range(0, pits / 2 - 1)
-                    .mapToObj(x -> new PitOf(x, amount)),
-                Stream.of(new PitOf(pits - 2 - 1, 0)),
+                    .range(0, pts / 2 - 1)
+                    .mapToObj(x -> new PitOf(x, marbles)),
+                Stream.of(new PitOf(pts - 2 - 1, 0)),
                 IntStream
-                    .range(0, pits / 2 - 1)
-                    .mapToObj(x -> new PitOf(x + pits / 2, amount)),
-                Stream.of(new PitOf(pits - 1, 0))
+                    .range(0, pts / 2 - 1)
+                    .mapToObj(x -> new PitOf(x + pts / 2, marbles)),
+                Stream.of(new PitOf(pts - 1, 0))
             ).flatMap(Function.identity()).collect(Collectors.toList())
         );
     }
@@ -55,7 +71,8 @@ public class BoardForTwo implements Board {
 
     @Override
     public boolean isHouse(final int position) {
-        return position == (this.size() / 2 - 1) || position == (this.size() - 1);
+        return position == (this.size() / 2 - 1)
+            || position == (this.size() - 1);
     }
 
     @Override
@@ -63,6 +80,11 @@ public class BoardForTwo implements Board {
         return this.pit(this.complimentIndex(pit));
     }
 
+    /**
+     * Index of opposite pit.
+     * @param pit a position of pit
+     * @return an opposite pit index
+     */
     private int complimentIndex(final int pit) {
         return (this.size() - pit - 2) % this.size();
     }

@@ -17,10 +17,10 @@ public final class PlayersOf implements Players {
 
     /**
      * Ctor.
-     * @param players Players in this game.
+     * @param plyrs Players in this game.
      */
-    public PlayersOf(final Player... players) {
-        this(new ArrayDeque<>(Arrays.asList(players)));
+    public PlayersOf(final Player... plyrs) {
+        this(new ArrayDeque<>(Arrays.asList(plyrs)));
     }
 
     @Override

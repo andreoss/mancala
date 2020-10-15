@@ -8,17 +8,34 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import org.eclipse.microprofile.config.Config;
 
+/**
+ * Games stored in memory.
+ *
+ */
 @ApplicationScoped
 public final class InMemoryGames implements Games {
+    /**
+     * Counter of games.
+     */
     private final AtomicInteger count = new AtomicInteger();
 
+    /**
+     * Games by id.
+     */
     private final Map<Integer, Game> games = new HashMap<>();
 
+    /**
+     * MP Config.
+     */
     private final Config config;
 
+    /**
+     * Ctor.
+     * @param cfg Configuration
+     */
     @Inject
-    public InMemoryGames(final Config config) {
-        this.config = config;
+    public InMemoryGames(final Config cfg) {
+        this.config = cfg;
     }
 
     @Override
