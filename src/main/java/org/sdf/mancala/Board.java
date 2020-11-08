@@ -53,12 +53,12 @@ public interface Board {
      * @param pit Position of a pit
      * @return Collections of pits (house excluded).
      */
-    Collection<Pit> pitsOnSide(int pit);
+    Iterable<Pit> pitsOnSide(int pit);
 
     /**
      * All pits on opponent's side.
      * @param pit Position of a pit
      * @return Collections of pits (house excluded).
      */
-    Collection<Pit> pitsOnOppositeSide(int pit);
+    Iterable<Pit> pitsOnOppositeSide(int pit);
 }

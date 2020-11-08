@@ -8,6 +8,15 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 final class BoardForTwoTest {
     @Test
+    void getsSize() {
+        final var board = new BoardForTwo();
+        MatcherAssert.assertThat(
+            board.size(),
+            Matchers.is(14)
+        );
+    }
+
+    @Test
     void getsAdjacentPit() {
         final var board = new BoardForTwo();
         MatcherAssert.assertThat(

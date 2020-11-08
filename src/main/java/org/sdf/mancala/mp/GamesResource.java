@@ -1,7 +1,6 @@
 package org.sdf.mancala.mp;
 
 import java.net.URI;
-import java.util.Collections;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.json.Json;
@@ -15,6 +14,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import org.cactoos.map.MapOf;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.sdf.mancala.Game;
@@ -31,7 +31,7 @@ public class GamesResource implements GamesApi {
      * Json factory.
      */
     private static final JsonBuilderFactory JSON =
-        Json.createBuilderFactory(Collections.emptyMap());
+        Json.createBuilderFactory(new MapOf<>());
 
     /**
      * The games.

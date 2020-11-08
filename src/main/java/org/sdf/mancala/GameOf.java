@@ -1,8 +1,9 @@
 package org.sdf.mancala;
 
-import java.util.Collection;
 import java.util.concurrent.atomic.AtomicBoolean;
 import lombok.RequiredArgsConstructor;
+import org.cactoos.iterable.Mapped;
+import org.cactoos.scalar.SumOf;
 
 /**
  * Game.
@@ -70,8 +71,8 @@ public final class GameOf implements Game {
                 }
             }
         }
-        final Collection<Pit> mine = this.board.pitsOnSide(pit);
-        if (mine.stream().mapToInt(Pit::count).sum() == 0) {
+        final Iterable<Pit> mine = this.board.pitsOnSide(pit);
+        if (new SumOf(new Mapped<>(Pit::count, mine)).intValue() == 0) {
             this.board.pitsOnOppositeSide(pit).forEach(
                 this.board.oppositeHouse(pit)::putFrom
             );

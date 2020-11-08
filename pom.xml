@@ -16,6 +16,11 @@
   <description>The Game Of Mancala</description>
   <dependencies>
     <dependency>
+      <groupId>org.cactoos</groupId>
+      <artifactId>cactoos</artifactId>
+      <version>0.46</version>
+    </dependency>
+    <dependency>
       <groupId>io.helidon.microprofile.bundles</groupId>
       <artifactId>helidon-microprofile</artifactId>
     </dependency>

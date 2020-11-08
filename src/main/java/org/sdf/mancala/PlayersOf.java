@@ -1,9 +1,9 @@
 package org.sdf.mancala;
 
 import java.util.ArrayDeque;
-import java.util.Arrays;
 import java.util.Queue;
 import lombok.RequiredArgsConstructor;
+import org.cactoos.list.ListOf;
 
 /**
  * Players.
@@ -20,7 +20,7 @@ public final class PlayersOf implements Players {
      * @param plyrs Players in this game.
      */
     public PlayersOf(final Player... plyrs) {
-        this(new ArrayDeque<>(Arrays.asList(plyrs)));
+        this(new ArrayDeque<>(new ListOf<>(plyrs)));
     }
 
     @Override

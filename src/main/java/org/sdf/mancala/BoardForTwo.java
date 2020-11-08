@@ -1,12 +1,12 @@
 package org.sdf.mancala;
 
-import java.util.Collection;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 import lombok.RequiredArgsConstructor;
+import org.cactoos.iterable.IterableOf;
+import org.cactoos.iterable.Joined;
+import org.cactoos.iterable.Mapped;
+import org.cactoos.iterable.RangeOf;
+import org.cactoos.list.ListOf;
 
 /**
  * Board for two players.
@@ -46,16 +46,28 @@ public final class BoardForTwo implements Board {
      */
     public BoardForTwo(final int marbles, final int pts) {
         this(
-            Stream.of(
-                IntStream
-                    .range(0, pts / 2 - 1)
-                    .mapToObj(x -> new PitOf(x, marbles)),
-                Stream.of(new PitOf(pts - 2 - 1, 0)),
-                IntStream
-                    .range(0, pts / 2 - 1)
-                    .mapToObj(x -> new PitOf(x + pts / 2, marbles)),
-                Stream.of(new PitOf(pts - 1, 0))
-            ).flatMap(Function.identity()).collect(Collectors.toList())
+            new ListOf<>(
+                new Joined<>(
+                    new Mapped<>(
+                        x -> new PitOf(x, marbles),
+                        new RangeOf<>(
+                            0, pts / 2 - 2, (Integer x) -> x + 1
+                        )
+                    ),
+                    new IterableOf<>(
+                        new PitOf(pts - 2 - 1, 0)
+                    ),
+                    new Mapped<>(
+                        x -> new PitOf(x + pts / 2, marbles),
+                        new RangeOf<>(
+                            0, pts / 2 - 2, (Integer x) -> x + 1
+                        )
+                    ),
+                    new IterableOf<>(
+                        new PitOf(pts - 1, 0)
+                    )
+                )
+            )
         );
     }
 
@@ -106,8 +118,8 @@ public final class BoardForTwo implements Board {
     }
 
     @Override
-    public Collection<Pit> pitsOnSide(final int pit) {
-        final Collection<Pit> result;
+    public Iterable<Pit> pitsOnSide(final int pit) {
+        final Iterable<Pit> result;
         if (pit < this.size() / 2) {
             result = this.pits.subList(0, this.size() / 2 - 1);
         } else {
@@ -117,7 +129,7 @@ public final class BoardForTwo implements Board {
     }
 
     @Override
-    public Collection<Pit> pitsOnOppositeSide(final int pit) {
+    public Iterable<Pit> pitsOnOppositeSide(final int pit) {
         return this.pitsOnSide(this.complimentIndex(pit));
     }
 }
