@@ -20,12 +20,12 @@ public final class BoardForTwo implements Board {
     /**
      * Initial amount of marbles.
      */
-    private static final int AMOUNT = 4;
+    private static final int MARBLE_AMOUNT = 4;
 
     /**
      * Amount of pits (houses included).
      */
-    private static final int PITS = 14;
+    private static final int PIT_AMOUNT = 14;
 
     /**
      * The pits.
@@ -36,7 +36,7 @@ public final class BoardForTwo implements Board {
      * Default ctor.
      */
     public BoardForTwo() {
-        this(AMOUNT, PITS);
+        this(BoardForTwo.MARBLE_AMOUNT, BoardForTwo.PIT_AMOUNT);
     }
 
     /**
