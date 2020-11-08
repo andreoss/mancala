@@ -1,7 +1,5 @@
 package org.sdf.mancala;
 
-import java.util.Collection;
-
 /**
  * Mancala's board.
  */
