@@ -1,0 +1,18 @@
+language: java
+jdk: openjdk17
+addons:
+  sonarcloud:
+    organization: andreoss
+
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=andreoss_mancala -Dsonar.login=3c44f975ecf68f28d06711320a533a58ecd270b9
+
+cache:
+  directories:
+    - $HOME/.m2
+env:
+  global:
+    - CODECOV_TOKEN="121d6f6b-2c68-4953-936c-4bc6df77832b"
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

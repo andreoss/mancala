@@ -1,0 +1,48 @@
+[
+  {
+    "name": "io.smallrye.openapi.api.models.OpenAPIImpl",
+    "allPublicMethods": true
+  },
+  {
+    "name": "io.smallrye.openapi.api.models.ComponentsImpl",
+    "allPublicMethods": true
+  },
+  {
+    "name": "io.helidon.webserver.jersey.WebServerBinder$WebServerRequestReferencingFactory",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "io.helidon.webserver.jersey.WebServerBinder$WebServerResponseReferencingFactory",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "io.helidon.webserver.jersey.WebServerBinder$SpanContextReferencingFactory",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "io.helidon.security.integration.jersey.SecurityFeature$SecurityContextRefFactory",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.sdf.mancala.InMemoryGames",
+    "allDeclaredConstructors": true,
+    "allDeclaredMethods": true
+  },
+  {
+    "name": "org.sdf.mancala.mp.GamesResource",
+    "allDeclaredConstructors": true,
+    "allDeclaredMethods": true
+  },
+  {
+    "name": "java.lang.Integer",
+    "allDeclaredMethods": true
+  },
+  {
+    "name": "java.lang.Long",
+    "allDeclaredMethods": true
+  },
+  {
+    "name": "java.lang.Boolean",
+    "allDeclaredMethods": true
+  }
+]

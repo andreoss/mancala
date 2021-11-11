@@ -1,0 +1,75 @@
+[*]
+charset = utf-8
+end_of_line = lf
+tab_width = 4
+indent_size = 4
+indent_style = space
+insert_final_newline = false
+max_line_length = 80
+ij_visual_guides = 80
+ij_wrap_on_typing = true
+
+[*.java]
+ij_continuation_indent_size = 4
+
+ij_java_keep_simple_lambdas_in_one_line = true
+
+ij_java_generate_final_locals = true
+ij_java_generate_final_parameters = true
+
+ij_java_method_parameters_new_line_after_left_paren = true
+ij_java_method_parameters_right_paren_on_new_line = true
+
+ij_java_class_count_to_use_import_on_demand = 9000
+ij_java_names_count_to_use_import_on_demand = 9000
+
+ij_java_imports_layout = java*, org*, javax*, *
+ij_java_use_single_class_imports = true
+
+ij_java_do_while_brace_force = always
+ij_java_for_brace_force = always
+ij_java_if_brace_force = always
+ij_java_while_brace_force = always
+
+ij_java_visibility = private
+
+ij_java_method_parameters_wrap = normal
+ij_java_align_multiline_parameters = false
+
+ij_java_replace_instanceof_and_cast = true
+ij_java_replace_null_check = true
+ij_java_replace_sum_lambda_with_method_ref = true
+
+ij_java_prefer_longer_names = false
+
+ij_java_subclass_name_suffix = Of
+
+ij_java_doc_enable_formatting = false
+
+ij_java_blank_lines_after_imports = 1
+ij_java_blank_lines_after_package = 1
+ij_java_blank_lines_around_class = 1
+ij_java_blank_lines_around_field = 1
+ij_java_blank_lines_around_field_in_interface = 1
+ij_java_blank_lines_around_initializer = 1
+ij_java_blank_lines_around_method = 1
+ij_java_blank_lines_around_method_in_interface = 1
+
+ij_java_extends_keyword_wrap = off
+ij_java_extends_list_wrap = normal
+
+ij_java_class_annotation_wrap = normal
+ij_java_field_annotation_wrap = normal
+ij_java_method_annotation_wrap = normal
+ij_java_parameter_annotation_wrap = normal
+ij_java_do_not_wrap_after_single_annotation = false
+ij_java_use_external_annotations = false
+ij_java_variable_annotation_wrap = off
+ij_java_space_within_empty_array_initializer_braces = false
+ij_java_align_multiline_array_initializer_expression = false
+ij_java_array_initializer_new_line_after_left_brace = false
+ij_java_array_initializer_right_brace_on_new_line = false
+ij_java_array_initializer_wrap = normal
+
+[{*.yaml, *.yml, *.xml, *.html}]
+indent_size = 2

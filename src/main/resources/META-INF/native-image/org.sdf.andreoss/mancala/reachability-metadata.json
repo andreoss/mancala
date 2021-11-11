@@ -1,0 +1,3147 @@
+{
+  "reflection": [
+    {
+      "type": "ch.qos.logback.classic.Logger"
+    },
+    {
+      "type": "com.sun.jndi.url.java.javaURLContextFactory"
+    },
+    {
+      "type": "com.sun.org.apache.xerces.internal.impl.dv.xs.ExtendedSchemaDVFactoryImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDVFactoryImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.sun.xml.internal.stream.XMLInputFactoryImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "groovy.lang.GroovyObject"
+    },
+    {
+      "type": "int"
+    },
+    {
+      "type": "io.helidon.common.LazyValueImpl",
+      "fields": [
+        {
+          "name": "loaded"
+        },
+        {
+          "name": "theLock"
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.config.Config"
+    },
+    {
+      "type": "io.helidon.config.PropertiesConfigParser"
+    },
+    {
+      "type": "io.helidon.config.encryption.EncryptionFilterService"
+    },
+    {
+      "type": "io.helidon.config.encryption.MpEncryptionFilter"
+    },
+    {
+      "type": "io.helidon.config.mp.MpConfigProviderResolver"
+    },
+    {
+      "type": "io.helidon.config.objectmapping.ObjectConfigMapperProvider"
+    },
+    {
+      "type": "io.helidon.config.yaml.YamlConfigParser"
+    },
+    {
+      "type": "io.helidon.config.yaml.mp.YamlConfigSourceProvider"
+    },
+    {
+      "type": "io.helidon.health.checks.DeadlockHealthCheck"
+    },
+    {
+      "type": "io.helidon.health.checks.DiskSpaceHealthCheck"
+    },
+    {
+      "type": "io.helidon.health.checks.HeapMemoryHealthCheck"
+    },
+    {
+      "type": "io.helidon.health.common.BuiltInHealthCheck"
+    },
+    {
+      "type": "io.helidon.metrics.MetricsSupportProviderImpl"
+    },
+    {
+      "type": "io.helidon.metrics.RegistryFactoryProviderImpl"
+    },
+    {
+      "type": "io.helidon.microprofile.cdi.BuildTimeEnd"
+    },
+    {
+      "type": "io.helidon.microprofile.cdi.BuildTimeStart"
+    },
+    {
+      "type": "io.helidon.microprofile.cdi.ExecutorServices",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.cdi.HelidonContainerImpl$2"
+    },
+    {
+      "type": "io.helidon.microprofile.cdi.Main",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "main",
+          "parameterTypes": [
+            "java.lang.String[]"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.cdi.RuntimeStart"
+    },
+    {
+      "type": "io.helidon.microprofile.config.ConfigCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "harvestConfigPropertyInjectionPointsFromEnabledBean",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessBean"
+          ]
+        },
+        {
+          "name": "registerConfigProducer",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterBeanDiscovery"
+          ]
+        },
+        {
+          "name": "validate",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterDeploymentValidation",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.faulttolerance.CommandBinding"
+    },
+    {
+      "type": "io.helidon.microprofile.faulttolerance.CommandInterceptor"
+    },
+    {
+      "type": "io.helidon.microprofile.faulttolerance.FaultToleranceExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "registerFaultToleranceMethods",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeanManager",
+            "javax.enterprise.inject.spi.ProcessSyntheticBean"
+          ]
+        },
+        {
+          "name": "registerFaultToleranceMethods",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessManagedBean"
+          ]
+        },
+        {
+          "name": "registerInterceptorBindings",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        },
+        {
+          "name": "registerMetricsAndInitExecutors",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterDeploymentValidation"
+          ]
+        },
+        {
+          "name": "updatePriorityMaybe",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessAnnotatedType"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.faulttolerance.FaultToleranceExtension$JerseyRequestScopeAsCdiBean"
+    },
+    {
+      "type": "io.helidon.microprofile.health.HealthCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "registerHealth",
+          "parameterTypes": [
+            "java.lang.Object"
+          ]
+        },
+        {
+          "name": "registerProducers",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.health.JvmRuntimeProducers"
+    },
+    {
+      "type": "io.helidon.microprofile.jwt.auth.Impl"
+    },
+    {
+      "type": "io.helidon.microprofile.jwt.auth.JsonWebTokenImpl"
+    },
+    {
+      "type": "io.helidon.microprofile.jwt.auth.JsonWebTokenProducer"
+    },
+    {
+      "type": "io.helidon.microprofile.jwt.auth.JwtAuthAnnotationAnalyzer"
+    },
+    {
+      "type": "io.helidon.microprofile.jwt.auth.JwtAuthCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "before",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery"
+          ]
+        },
+        {
+          "name": "collectClaimProducer",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessInjectionPoint"
+          ]
+        },
+        {
+          "name": "configured",
+          "parameterTypes": [
+            "io.helidon.config.Config"
+          ]
+        },
+        {
+          "name": "registerClaimProducers",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterBeanDiscovery",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        },
+        {
+          "name": "registerProvider",
+          "parameterTypes": [
+            "java.lang.Object",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        },
+        {
+          "name": "validate",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterDeploymentValidation"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.jwt.auth.JwtAuthProviderService"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.InterceptorConcurrentGauge"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.InterceptorCounted"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.InterceptorMetered"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.InterceptorSimplyTimed"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.InterceptorSimplyTimedBase"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.InterceptorSyntheticSimplyTimed"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.InterceptorTimed"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.InterceptorTimedBase"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.MetricProducer"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.MetricsCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "before",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery"
+          ]
+        },
+        {
+          "name": "clearAnnotationInfo",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterDeploymentValidation"
+          ]
+        },
+        {
+          "name": "collectSyntheticSimpleTimerMetric",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessManagedBean"
+          ]
+        },
+        {
+          "name": "processInjectionPoints",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessInjectionPoint"
+          ]
+        },
+        {
+          "name": "recordAnnotatedGaugeSite",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessManagedBean"
+          ]
+        },
+        {
+          "name": "recordMetricAnnotatedClass",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessAnnotatedType"
+          ]
+        },
+        {
+          "name": "recordProducerMethods",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessProducerMethod"
+          ]
+        },
+        {
+          "name": "recordSimplyTimedForRestResources",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessAnnotatedType"
+          ]
+        },
+        {
+          "name": "registerAnnotatedGauges",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterDeploymentValidation",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        },
+        {
+          "name": "registerService",
+          "parameterTypes": [
+            "java.lang.Object",
+            "javax.enterprise.inject.spi.BeanManager",
+            "io.helidon.microprofile.server.ServerCdiExtension"
+          ]
+        },
+        {
+          "name": "runtimeStart",
+          "parameterTypes": [
+            "java.lang.Object"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.MetricsInterceptorBase"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.MetricsInterceptorBase$WithPostCompletion"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.RegistryProducer",
+      "methods": [
+        {
+          "name": "getDefaultRegistry",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.SyntheticSimplyTimed"
+    },
+    {
+      "type": "io.helidon.microprofile.metrics.VendorDefined"
+    },
+    {
+      "type": "io.helidon.microprofile.openapi.OpenApiCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "configure",
+          "parameterTypes": [
+            "io.helidon.config.Config"
+          ]
+        },
+        {
+          "name": "processAnnotatedType",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessAnnotatedType"
+          ]
+        },
+        {
+          "name": "registerOpenApi",
+          "parameterTypes": [
+            "java.lang.Object"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.restclient.HelidonRequestHeaderAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.restclient.HelidonRequestHeaderFilter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.security.SecurityCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "configure",
+          "parameterTypes": [
+            "io.helidon.config.Config"
+          ]
+        },
+        {
+          "name": "registerBean",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery"
+          ]
+        },
+        {
+          "name": "registerSecurity",
+          "parameterTypes": [
+            "java.lang.Object",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.security.SecurityProducer"
+    },
+    {
+      "type": "io.helidon.microprofile.server.JaxRsCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "collectProviderClasses",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessManagedBean"
+          ]
+        },
+        {
+          "name": "collectResourceClasses",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessManagedBean"
+          ]
+        },
+        {
+          "name": "fixApps",
+          "parameterTypes": [
+            "java.lang.Object"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.server.JaxRsCdiExtension$2"
+    },
+    {
+      "type": "io.helidon.microprofile.server.ServerCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "buildTime",
+          "parameterTypes": [
+            "java.lang.Object"
+          ]
+        },
+        {
+          "name": "prepareRuntime",
+          "parameterTypes": [
+            "io.helidon.config.Config"
+          ]
+        },
+        {
+          "name": "registerKpiMetricsDeferrableRequestHandlers",
+          "parameterTypes": [
+            "java.lang.Object",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        },
+        {
+          "name": "startServer",
+          "parameterTypes": [
+            "java.lang.Object",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.server.ServerCdiExtension$Proxy$_$$_WeldClientProxy",
+      "unsafeAllocated": true,
+      "fields": [
+        {
+          "name": "BEAN_ID_FIELD"
+        },
+        {
+          "name": "CONTEXT_ID_FIELD"
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.tracing.MpTracingAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.tracing.MpTracingContextFilter",
+      "fields": [
+        {
+          "name": "request"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.microprofile.tracing.MpTracingInterceptor"
+    },
+    {
+      "type": "io.helidon.microprofile.tracing.TracerProducer"
+    },
+    {
+      "type": "io.helidon.microprofile.tracing.TracingCdiExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "observeBeforeBeanDiscovery",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery"
+          ]
+        },
+        {
+          "name": "prepareTracer",
+          "parameterTypes": [
+            "java.lang.Object",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.security.Security"
+    },
+    {
+      "type": "io.helidon.security.abac.policy.PolicyValidatorService"
+    },
+    {
+      "type": "io.helidon.security.abac.role.RoleAnnotationAnalyzer"
+    },
+    {
+      "type": "io.helidon.security.abac.role.RoleValidatorService"
+    },
+    {
+      "type": "io.helidon.security.abac.scope.ScopeValidatorService"
+    },
+    {
+      "type": "io.helidon.security.abac.time.TimeValidatorService"
+    },
+    {
+      "type": "io.helidon.security.integration.jersey.SecurityFeature"
+    },
+    {
+      "type": "io.helidon.security.integration.jersey.SecurityFeature$1"
+    },
+    {
+      "type": "io.helidon.security.integration.jersey.SecurityFilter",
+      "fields": [
+        {
+          "name": "securityContext"
+        },
+        {
+          "name": "serverConfig"
+        },
+        {
+          "name": "serverRequest"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "postConstruct",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.security.integration.jersey.SecurityFilterCommon",
+      "fields": [
+        {
+          "name": "featureConfig"
+        },
+        {
+          "name": "security"
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.security.integration.jersey.SecurityPreMatchingFilter",
+      "fields": [
+        {
+          "name": "injectionManager"
+        },
+        {
+          "name": "uriInfo"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.security.integration.jersey.client.ClientSecurityAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.security.providers.abac.AbacProviderService"
+    },
+    {
+      "type": "io.helidon.security.providers.header.HeaderAtnService"
+    },
+    {
+      "type": "io.helidon.security.providers.httpauth.HttpBasicAuthService"
+    },
+    {
+      "type": "io.helidon.security.providers.httpauth.HttpDigestAuthService"
+    },
+    {
+      "type": "io.helidon.security.providers.httpsign.HttpSignService"
+    },
+    {
+      "type": "io.helidon.security.providers.jwt.JwtProviderService"
+    },
+    {
+      "type": "io.helidon.security.providers.oidc.OidcProviderService"
+    },
+    {
+      "type": "io.helidon.servicecommon.restcdi.HelidonInterceptor"
+    },
+    {
+      "type": "io.helidon.servicecommon.restcdi.HelidonInterceptor$Base"
+    },
+    {
+      "type": "io.helidon.servicecommon.restcdi.HelidonInterceptor$WithPostCompletion"
+    },
+    {
+      "type": "io.helidon.servicecommon.restcdi.HelidonRestCdiExtension",
+      "methods": [
+        {
+          "name": "observeManagedBeans",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessManagedBean"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.tracing.jersey.client.ClientTracingAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.tracing.tracerresolver.TracerResolverProvider"
+    },
+    {
+      "type": "io.helidon.webclient.jaxrs.JerseyClientAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.helidon.webserver.jersey.AsyncExecutorProvider"
+    },
+    {
+      "type": "io.helidon.webserver.jersey.HelidonHK2InjectionManagerFactory",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.netty.util.DefaultAttributeMap"
+    },
+    {
+      "type": "io.netty.util.concurrent.DefaultPromise"
+    },
+    {
+      "type": "io.netty.util.concurrent.SingleThreadEventExecutor"
+    },
+    {
+      "type": "io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueColdProducerFields",
+      "fields": [
+        {
+          "name": "producerLimit"
+        }
+      ]
+    },
+    {
+      "type": "io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields",
+      "fields": [
+        {
+          "name": "consumerIndex"
+        }
+      ]
+    },
+    {
+      "type": "io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields",
+      "fields": [
+        {
+          "name": "producerIndex"
+        }
+      ]
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.ComponentsImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.ExtensibleImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.ExternalDocumentationImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.OpenAPIImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.OperationImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.PathItemImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.PathsImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.callbacks.CallbackImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.examples.ExampleImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.headers.HeaderImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.info.ContactImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.info.InfoImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.info.LicenseImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.links.LinkImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.media.EncodingImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.media.MediaTypeImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.media.SchemaImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.media.XMLImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.parameters.ParameterImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.parameters.RequestBodyImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.responses.APIResponseImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.responses.APIResponsesImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.security.OAuthFlowImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.security.OAuthFlowsImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.security.ScopesImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.security.SecuritySchemeImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.servers.ServerImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.servers.ServerVariableImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.servers.ServerVariablesImpl"
+    },
+    {
+      "type": "io.smallrye.openapi.api.models.tags.TagImpl"
+    },
+    {
+      "type": "java.beans.PropertyVetoException"
+    },
+    {
+      "type": "java.io.Serializable"
+    },
+    {
+      "type": "java.lang.AutoCloseable"
+    },
+    {
+      "type": "java.lang.Boolean",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "getBoolean",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Class[]"
+    },
+    {
+      "type": "java.lang.Deprecated"
+    },
+    {
+      "type": "java.lang.FunctionalInterface"
+    },
+    {
+      "type": "java.lang.Integer"
+    },
+    {
+      "type": "java.lang.Object"
+    },
+    {
+      "type": "java.lang.Runnable"
+    },
+    {
+      "type": "java.lang.Runtime"
+    },
+    {
+      "type": "java.lang.String"
+    },
+    {
+      "type": "java.lang.String[]"
+    },
+    {
+      "type": "java.lang.annotation.Annotation"
+    },
+    {
+      "type": "java.lang.annotation.Documented"
+    },
+    {
+      "type": "java.lang.annotation.Inherited"
+    },
+    {
+      "type": "java.lang.annotation.Retention"
+    },
+    {
+      "type": "java.lang.annotation.Target"
+    },
+    {
+      "type": "java.lang.management.ManagementFactory",
+      "methods": [
+        {
+          "name": "getRuntimeMXBean",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.management.RuntimeMXBean",
+      "methods": [
+        {
+          "name": "getInputArguments",
+          "parameterTypes": []
+        },
+        {
+          "name": "getName",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.nio.Bits"
+    },
+    {
+      "type": "java.nio.Buffer",
+      "fields": [
+        {
+          "name": "address"
+        }
+      ]
+    },
+    {
+      "type": "java.nio.ByteBuffer"
+    },
+    {
+      "type": "java.nio.DirectByteBuffer"
+    },
+    {
+      "type": "java.util.AbstractMap"
+    },
+    {
+      "type": "java.util.HashMap"
+    },
+    {
+      "type": "java.util.LinkedHashMap"
+    },
+    {
+      "type": "java.util.Map"
+    },
+    {
+      "type": "java.util.Map$Entry[]"
+    },
+    {
+      "type": "java.util.concurrent.Flow$Subscriber"
+    },
+    {
+      "type": "javassist.util.proxy.MethodHandler"
+    },
+    {
+      "type": "javax.annotation.PostConstruct"
+    },
+    {
+      "type": "javax.annotation.PreDestroy"
+    },
+    {
+      "type": "javax.annotation.Priority",
+      "methods": [
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "javax.annotation.security.PermitAll"
+    },
+    {
+      "type": "javax.decorator.Decorator"
+    },
+    {
+      "type": "javax.decorator.Delegate"
+    },
+    {
+      "type": "javax.ejb.PostActivate"
+    },
+    {
+      "type": "javax.ejb.PrePassivate"
+    },
+    {
+      "type": "javax.enterprise.context.ApplicationScoped"
+    },
+    {
+      "type": "javax.enterprise.context.BeforeDestroyed",
+      "methods": [
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "javax.enterprise.context.ConversationScoped"
+    },
+    {
+      "type": "javax.enterprise.context.Dependent"
+    },
+    {
+      "type": "javax.enterprise.context.Initialized",
+      "methods": [
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "javax.enterprise.context.NormalScope"
+    },
+    {
+      "type": "javax.enterprise.context.RequestScoped"
+    },
+    {
+      "type": "javax.enterprise.context.SessionScoped"
+    },
+    {
+      "type": "javax.enterprise.context.control.ActivateRequestContext"
+    },
+    {
+      "type": "javax.enterprise.event.Event"
+    },
+    {
+      "type": "javax.enterprise.event.Observes"
+    },
+    {
+      "type": "javax.enterprise.inject.Any"
+    },
+    {
+      "type": "javax.enterprise.inject.Default"
+    },
+    {
+      "type": "javax.enterprise.inject.Instance"
+    },
+    {
+      "type": "javax.enterprise.inject.Produces"
+    },
+    {
+      "type": "javax.enterprise.inject.Stereotype"
+    },
+    {
+      "type": "javax.enterprise.inject.Vetoed"
+    },
+    {
+      "type": "javax.enterprise.inject.spi.Extension"
+    },
+    {
+      "type": "javax.enterprise.inject.spi.WithAnnotations"
+    },
+    {
+      "type": "javax.enterprise.util.Nonbinding"
+    },
+    {
+      "type": "javax.inject.Inject"
+    },
+    {
+      "type": "javax.inject.Named",
+      "methods": [
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "javax.inject.Provider"
+    },
+    {
+      "type": "javax.inject.Qualifier"
+    },
+    {
+      "type": "javax.inject.Scope"
+    },
+    {
+      "type": "javax.inject.Singleton"
+    },
+    {
+      "type": "javax.interceptor.AroundConstruct"
+    },
+    {
+      "type": "javax.interceptor.AroundInvoke"
+    },
+    {
+      "type": "javax.interceptor.AroundTimeout"
+    },
+    {
+      "type": "javax.interceptor.ExcludeClassInterceptors"
+    },
+    {
+      "type": "javax.interceptor.Interceptor"
+    },
+    {
+      "type": "javax.interceptor.InterceptorBinding"
+    },
+    {
+      "type": "javax.interceptor.Interceptors"
+    },
+    {
+      "type": "javax.persistence.Embeddable"
+    },
+    {
+      "type": "javax.persistence.Entity"
+    },
+    {
+      "type": "javax.persistence.EntityManager"
+    },
+    {
+      "type": "javax.persistence.EntityManagerFactory"
+    },
+    {
+      "type": "javax.persistence.MappedSuperclass"
+    },
+    {
+      "type": "javax.persistence.PersistenceContext"
+    },
+    {
+      "type": "javax.persistence.PersistenceContextType"
+    },
+    {
+      "type": "javax.persistence.PersistenceUnit"
+    },
+    {
+      "type": "javax.websocket.server.ServerEndpoint"
+    },
+    {
+      "type": "javax.ws.rs.ConstrainedTo"
+    },
+    {
+      "type": "javax.ws.rs.Consumes"
+    },
+    {
+      "type": "javax.ws.rs.DELETE"
+    },
+    {
+      "type": "javax.ws.rs.GET"
+    },
+    {
+      "type": "javax.ws.rs.HEAD"
+    },
+    {
+      "type": "javax.ws.rs.HttpMethod"
+    },
+    {
+      "type": "javax.ws.rs.OPTIONS"
+    },
+    {
+      "type": "javax.ws.rs.PATCH"
+    },
+    {
+      "type": "javax.ws.rs.POST"
+    },
+    {
+      "type": "javax.ws.rs.PUT"
+    },
+    {
+      "type": "javax.ws.rs.Path",
+      "methods": [
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "javax.ws.rs.PathParam",
+      "methods": [
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "javax.ws.rs.Produces",
+      "methods": [
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "javax.ws.rs.container.ContainerRequestFilter"
+    },
+    {
+      "type": "javax.ws.rs.container.ContainerResponseFilter"
+    },
+    {
+      "type": "javax.ws.rs.container.PreMatching"
+    },
+    {
+      "type": "javax.ws.rs.core.Context"
+    },
+    {
+      "type": "javax.ws.rs.core.Feature"
+    },
+    {
+      "type": "javax.ws.rs.ext.ExceptionMapper"
+    },
+    {
+      "type": "javax.ws.rs.ext.MessageBodyReader"
+    },
+    {
+      "type": "javax.ws.rs.ext.MessageBodyWriter"
+    },
+    {
+      "type": "javax.ws.rs.ext.Provider"
+    },
+    {
+      "type": "javax.xml.ws.WebServiceRef"
+    },
+    {
+      "type": "jdk.internal.misc.Unsafe",
+      "methods": [
+        {
+          "name": "getUnsafe",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "jdk.internal.vm.annotation.IntrinsicCandidate"
+    },
+    {
+      "type": "module-info"
+    },
+    {
+      "type": "org.apache.log4j.LogManager"
+    },
+    {
+      "type": "org.apache.logging.log4j.Logger"
+    },
+    {
+      "type": "org.eclipse.microprofile.config.Config"
+    },
+    {
+      "type": "org.eclipse.microprofile.config.inject.ConfigProperty",
+      "methods": [
+        {
+          "name": "defaultValue",
+          "parameterTypes": []
+        },
+        {
+          "name": "name",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.eclipse.microprofile.faulttolerance.Asynchronous"
+    },
+    {
+      "type": "org.eclipse.microprofile.faulttolerance.Bulkhead"
+    },
+    {
+      "type": "org.eclipse.microprofile.faulttolerance.CircuitBreaker"
+    },
+    {
+      "type": "org.eclipse.microprofile.faulttolerance.Fallback"
+    },
+    {
+      "type": "org.eclipse.microprofile.faulttolerance.Retry"
+    },
+    {
+      "type": "org.eclipse.microprofile.faulttolerance.Timeout"
+    },
+    {
+      "type": "org.eclipse.microprofile.graphql.GraphQLApi"
+    },
+    {
+      "type": "org.eclipse.microprofile.graphql.Input"
+    },
+    {
+      "type": "org.eclipse.microprofile.graphql.Interface"
+    },
+    {
+      "type": "org.eclipse.microprofile.graphql.Type"
+    },
+    {
+      "type": "org.eclipse.microprofile.health.Health"
+    },
+    {
+      "type": "org.eclipse.microprofile.health.HealthCheck"
+    },
+    {
+      "type": "org.eclipse.microprofile.health.HealthCheck$$Proxy$_$$_WeldClientProxy",
+      "unsafeAllocated": true,
+      "fields": [
+        {
+          "name": "BEAN_ID_FIELD"
+        },
+        {
+          "name": "CONTEXT_ID_FIELD"
+        }
+      ]
+    },
+    {
+      "type": "org.eclipse.microprofile.health.Liveness"
+    },
+    {
+      "type": "org.eclipse.microprofile.health.Readiness"
+    },
+    {
+      "type": "org.eclipse.microprofile.metrics.MetricRegistry"
+    },
+    {
+      "type": "org.eclipse.microprofile.metrics.annotation.ConcurrentGauge"
+    },
+    {
+      "type": "org.eclipse.microprofile.metrics.annotation.Counted"
+    },
+    {
+      "type": "org.eclipse.microprofile.metrics.annotation.Metered"
+    },
+    {
+      "type": "org.eclipse.microprofile.metrics.annotation.RegistryType",
+      "methods": [
+        {
+          "name": "type",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.eclipse.microprofile.metrics.annotation.SimplyTimed"
+    },
+    {
+      "type": "org.eclipse.microprofile.metrics.annotation.Timed"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.annotations.Operation",
+      "methods": [
+        {
+          "name": "deprecated",
+          "parameterTypes": []
+        },
+        {
+          "name": "description",
+          "parameterTypes": []
+        },
+        {
+          "name": "hidden",
+          "parameterTypes": []
+        },
+        {
+          "name": "operationId",
+          "parameterTypes": []
+        },
+        {
+          "name": "summary",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.annotations.responses.APIResponse",
+      "methods": [
+        {
+          "name": "content",
+          "parameterTypes": []
+        },
+        {
+          "name": "description",
+          "parameterTypes": []
+        },
+        {
+          "name": "headers",
+          "parameterTypes": []
+        },
+        {
+          "name": "links",
+          "parameterTypes": []
+        },
+        {
+          "name": "name",
+          "parameterTypes": []
+        },
+        {
+          "name": "ref",
+          "parameterTypes": []
+        },
+        {
+          "name": "responseCode",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.annotations.tags.Tag"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.Components"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.ComponentsBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.ComponentsCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.Constructible"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.Extensible"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.ExternalDocumentation"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.ExternalDocumentationBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.ExternalDocumentationCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.OpenAPI"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.OpenAPIBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.OpenAPICustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.Operation"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.OperationBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.OperationCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.PathItem"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.PathItemBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.PathItemCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.Paths"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.PathsBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.PathsCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.Reference"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.callbacks.Callback"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.callbacks.CallbackBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.callbacks.CallbackCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.examples.Example"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.examples.ExampleBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.examples.ExampleCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.headers.Header"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.headers.HeaderBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.headers.HeaderCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.Contact"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.ContactBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.ContactCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.Info"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.InfoBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.InfoCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.License"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.LicenseBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.info.LicenseCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.links.Link"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.links.LinkBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.links.LinkCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.Content"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.ContentBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.ContentCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.Discriminator"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.DiscriminatorBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.DiscriminatorCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.Encoding"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.EncodingBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.EncodingCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.MediaType"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.MediaTypeBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.MediaTypeCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.Schema"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.SchemaBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.SchemaCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.XML"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.XMLBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.media.XMLCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.parameters.Parameter"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.parameters.ParameterBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.parameters.ParameterCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.parameters.RequestBody"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.parameters.RequestBodyBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.parameters.RequestBodyCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.responses.APIResponse"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.responses.APIResponseBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.responses.APIResponseCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.responses.APIResponses"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.responses.APIResponsesBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.responses.APIResponsesCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.OAuthFlow"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.OAuthFlowBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.OAuthFlowCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.OAuthFlows"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.OAuthFlowsBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.OAuthFlowsCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.Scopes"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.ScopesBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.ScopesCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.SecurityRequirement"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.SecurityRequirementBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.SecurityRequirementCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.SecurityScheme"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.SecuritySchemeBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.security.SecuritySchemeCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.Server"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.ServerBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.ServerCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.ServerVariable"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.ServerVariableBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.ServerVariableCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.ServerVariables"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.ServerVariablesBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.servers.ServerVariablesCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.tags.Tag"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.tags.TagBeanInfo"
+    },
+    {
+      "type": "org.eclipse.microprofile.openapi.models.tags.TagCustomizer"
+    },
+    {
+      "type": "org.eclipse.microprofile.opentracing.Traced"
+    },
+    {
+      "type": "org.glassfish.hk2.internal.PerThreadContext"
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "afterDiscoveryObserver",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterBeanDiscovery"
+          ]
+        },
+        {
+          "name": "afterTypeDiscovery",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterTypeDiscovery"
+          ]
+        },
+        {
+          "name": "beforeBeanDiscovery",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        },
+        {
+          "name": "processInjectionTarget",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessInjectionTarget"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProviderServerRuntimeSpecifics$JaxRsParamProducer"
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProviderServerRuntimeSpecifics$JaxRsParamProducer$JaxRsParamQualifier"
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.CdiServerComponentProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.GenericInjectionManagerStore"
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.JerseyVetoed"
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "processAnnotatedType",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.ProcessAnnotatedType",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.ProcessJAXRSAnnotatedTypes"
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.spi.InjectionManagerStore"
+    },
+    {
+      "type": "org.glassfish.jersey.ext.cdi1x.internal.spi.InjectionTargetListener"
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.ContextInjectionResolverImpl",
+      "fields": [
+        {
+          "name": "serviceLocator"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.Hk2InjectionManagerFactory",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.Hk2RequestScope",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.InstanceSupplierFactoryBridge"
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.JerseyErrorService",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.SupplierFactoryBridge"
+    },
+    {
+      "type": "org.glassfish.jersey.internal.JaxrsProviders",
+      "fields": [
+        {
+          "name": "mappers"
+        },
+        {
+          "name": "resolvers"
+        },
+        {
+          "name": "workers"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.internal.config.ExternalPropertiesAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.internal.inject.AbstractBinder"
+    },
+    {
+      "type": "org.glassfish.jersey.internal.inject.Binder"
+    },
+    {
+      "type": "org.glassfish.jersey.internal.inject.Custom"
+    },
+    {
+      "type": "org.glassfish.jersey.internal.inject.ParamConverters$AggregatedProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.glassfish.jersey.internal.inject.InjectionManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.internal.util.Property"
+    },
+    {
+      "type": "org.glassfish.jersey.jsonb.JsonBindingFeature",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.jsonb.internal.JsonBindingAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.jsonb.internal.JsonBindingProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "javax.ws.rs.ext.Providers"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.jsonp.JsonProcessingFeature",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.jsonp.internal.JsonProcessingAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.logging.LoggingFeatureAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.media.sse.OutboundEventWriter",
+      "fields": [
+        {
+          "name": "workersProvider"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.media.sse.SseFeature",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.media.sse.internal.SseAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.media.sse.internal.SseBinder"
+    },
+    {
+      "type": "org.glassfish.jersey.media.sse.internal.SseEventSinkValueParamProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "javax.inject.Provider",
+            "javax.inject.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.AbstractFormProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.BasicTypesMessageProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.ByteArrayProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.EnumMessageProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.FileProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.FormMultivaluedMapProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.FormProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.InputStreamProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.ReaderProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.StreamingOutputProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.StringMessageProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.microprofile.restclient.HeadersRequestFilter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.microprofile.restclient.RequestHeaderAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.microprofile.restclient.RestClientExtension",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "restClientRegistration",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterBeanDiscovery",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.process.Inflector"
+    },
+    {
+      "type": "org.glassfish.jersey.process.internal.RequestScope"
+    },
+    {
+      "type": "org.glassfish.jersey.server.BackgroundScheduler"
+    },
+    {
+      "type": "org.glassfish.jersey.server.ChunkedResponseWriter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.ManagedAsyncExecutor"
+    },
+    {
+      "type": "org.glassfish.jersey.server.filter.internal.ServerFiltersAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor",
+      "fields": [
+        {
+          "name": "containerRequestProvider"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.RuntimeDelegateImpl"
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.inject.AbstractValueParamProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.monitoring.MonitoringAutodiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.monitoring.MonitoringContainerListener",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.model.Parameter$ServerParameterService",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.spi.ComponentProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.server.spi.ExternalRequestScope"
+    },
+    {
+      "type": "org.glassfish.jersey.server.spi.internal.ValueParamProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.server.wadl.WadlFeature",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.wadl.internal.WadlAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.wadl.processor.OptionsMethodProcessor$GenericOptionsInflector"
+    },
+    {
+      "type": "org.glassfish.jersey.server.wadl.processor.OptionsMethodProcessor$PlainTextOptionsInflector"
+    },
+    {
+      "type": "org.glassfish.jersey.spi.ComponentProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.spi.ExecutorServiceProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.weld.se.WeldInjectionManagerStore",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.weld.se.WeldRequestScope"
+    },
+    {
+      "type": "org.glassfish.jersey.weld.se.WeldRequestScope$Proxy$_$$_WeldClientProxy",
+      "unsafeAllocated": true,
+      "fields": [
+        {
+          "name": "BEAN_ID_FIELD"
+        },
+        {
+          "name": "CONTEXT_ID_FIELD"
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.json.JsonProviderImpl"
+    },
+    {
+      "type": "org.glassfish.json.jaxrs.JsonValueBodyReader",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.json.jaxrs.JsonValueBodyWriter",
+      "fields": [
+        {
+          "name": "config"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "init",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.jandex.ClassInfo"
+    },
+    {
+      "type": "org.jboss.jandex.Index"
+    },
+    {
+      "type": "org.jboss.logmanager.LogManager"
+    },
+    {
+      "type": "org.jboss.weld.bean.proxy.ProxyObject"
+    },
+    {
+      "type": "org.jboss.weld.bean.proxy.UnsafeProxyInstantiator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.bootstrap.WeldExtension",
+      "methods": [
+        {
+          "name": "beforeBeanDiscovery",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.bootstrap.api.helpers.RegistrySingletonProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.configuration.spi.ExternalConfiguration"
+    },
+    {
+      "type": "org.jboss.weld.context.activator.ActivateRequestContext"
+    },
+    {
+      "type": "org.jboss.weld.context.bound.Bound"
+    },
+    {
+      "type": "org.jboss.weld.context.unbound.Unbound"
+    },
+    {
+      "type": "org.jboss.weld.contexts.activator.AbstractActivateRequestContextInterceptor"
+    },
+    {
+      "type": "org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor"
+    },
+    {
+      "type": "org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor"
+    },
+    {
+      "type": "org.jboss.weld.environment.deployment.discovery.jandex.JandexDiscoveryStrategy",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.weld.resources.spi.ResourceLoader",
+            "org.jboss.weld.bootstrap.api.Bootstrap",
+            "java.util.Set"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.environment.logging.CommonLogger_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.environment.logging.CommonLogger_$logger_ru"
+    },
+    {
+      "type": "org.jboss.weld.environment.logging.CommonLogger_$logger_ru_RU"
+    },
+    {
+      "type": "org.jboss.weld.environment.se.WeldSEBeanRegistrant",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "registerWeldSEBeans",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.BeforeBeanDiscovery",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        },
+        {
+          "name": "registerWeldSEContexts",
+          "parameterTypes": [
+            "javax.enterprise.inject.spi.AfterBeanDiscovery",
+            "javax.enterprise.inject.spi.BeanManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.environment.se.beans.ParametersFactory"
+    },
+    {
+      "type": "org.jboss.weld.environment.se.bindings.Parameters"
+    },
+    {
+      "type": "org.jboss.weld.environment.se.contexts.ThreadScoped"
+    },
+    {
+      "type": "org.jboss.weld.environment.se.contexts.activators.ActivateThreadScope"
+    },
+    {
+      "type": "org.jboss.weld.environment.se.contexts.activators.ActivateThreadScopeInterceptor"
+    },
+    {
+      "type": "org.jboss.weld.environment.se.threading.RunnableDecorator"
+    },
+    {
+      "type": "org.jboss.weld.events.WeldEvent"
+    },
+    {
+      "type": "org.jboss.weld.events.WeldEvent$Event$$Proxy$_$$_Weld$Proxy$"
+    },
+    {
+      "type": "org.jboss.weld.inject.WeldInstance"
+    },
+    {
+      "type": "org.jboss.weld.inject.WeldInstance$Instance$Provider$$Proxy$_$$_Weld$Proxy$"
+    },
+    {
+      "type": "org.jboss.weld.interceptor.proxy.LifecycleMixin"
+    },
+    {
+      "type": "org.jboss.weld.interceptor.util.proxy.TargetInstanceProxy"
+    },
+    {
+      "type": "org.jboss.weld.logging.BeanLogger_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.logging.BeanLogger_$logger_ru"
+    },
+    {
+      "type": "org.jboss.weld.logging.BeanLogger_$logger_ru_RU"
+    },
+    {
+      "type": "org.jboss.weld.logging.BootstrapLogger_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.logging.BootstrapLogger_$logger_ru"
+    },
+    {
+      "type": "org.jboss.weld.logging.BootstrapLogger_$logger_ru_RU"
+    },
+    {
+      "type": "org.jboss.weld.logging.ConfigurationLogger_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.logging.ConfigurationLogger_$logger_ru"
+    },
+    {
+      "type": "org.jboss.weld.logging.ConfigurationLogger_$logger_ru_RU"
+    },
+    {
+      "type": "org.jboss.weld.logging.EventLogger_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.logging.EventLogger_$logger_ru"
+    },
+    {
+      "type": "org.jboss.weld.logging.EventLogger_$logger_ru_RU"
+    },
+    {
+      "type": "org.jboss.weld.logging.ReflectionLogger_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.logging.ReflectionLogger_$logger_ru"
+    },
+    {
+      "type": "org.jboss.weld.logging.ReflectionLogger_$logger_ru_RU"
+    },
+    {
+      "type": "org.jboss.weld.logging.ValidatorLogger_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.logging.ValidatorLogger_$logger_ru"
+    },
+    {
+      "type": "org.jboss.weld.logging.ValidatorLogger_$logger_ru_RU"
+    },
+    {
+      "type": "org.jboss.weld.logging.VersionLogger_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jboss.weld.logging.VersionLogger_$logger_ru"
+    },
+    {
+      "type": "org.jboss.weld.logging.VersionLogger_$logger_ru_RU"
+    },
+    {
+      "type": "org.jboss.weld.proxy.WeldClientProxy"
+    },
+    {
+      "type": "org.jboss.weld.proxy.WeldConstruct"
+    },
+    {
+      "type": "org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl"
+    },
+    {
+      "type": "org.jvnet.hk2.internal.DynamicConfigurationServiceImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.glassfish.hk2.api.ServiceLocator"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jvnet.hk2.internal.ServiceLocatorRuntimeImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.glassfish.hk2.api.ServiceLocator"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.microprofileext.openapi.swaggerui.OpenApiUiService"
+    },
+    {
+      "type": "org.microprofileext.openapi.swaggerui.OpenApiUiService$Proxy$_$$_WeldSubclass"
+    },
+    {
+      "type": "org.microprofileext.openapi.swaggerui.RequestInfo"
+    },
+    {
+      "type": "org.microprofileext.openapi.swaggerui.StaticResourcesService"
+    },
+    {
+      "type": "org.microprofileext.openapi.swaggerui.StaticResourcesService$Proxy$_$$_WeldSubclass"
+    },
+    {
+      "type": "org.microprofileext.openapi.swaggerui.Templates"
+    },
+    {
+      "type": "org.microprofileext.openapi.swaggerui.WhiteLabel"
+    },
+    {
+      "type": "org.osgi.framework.BundleReference"
+    },
+    {
+      "type": "org.sdf.mancala.Games"
+    },
+    {
+      "type": "org.sdf.mancala.InMemoryGames"
+    },
+    {
+      "type": "org.sdf.mancala.mp.GamesApi"
+    },
+    {
+      "type": "org.sdf.mancala.mp.GamesResource"
+    },
+    {
+      "type": "org.sdf.mancala.mp.GamesResource$Proxy$_$$_WeldSubclass"
+    },
+    {
+      "type": "org.sdf.mancala.mp.Mancala"
+    },
+    {
+      "type": "sun.management.VMManagementImpl",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "compTimeMonitoringSupport"
+        },
+        {
+          "name": "currentThreadCpuTimeSupport"
+        },
+        {
+          "name": "objectMonitorUsageSupport"
+        },
+        {
+          "name": "otherThreadCpuTimeSupport"
+        },
+        {
+          "name": "remoteDiagnosticCommandsSupport"
+        },
+        {
+          "name": "synchronizerUsageSupport"
+        },
+        {
+          "name": "threadAllocatedMemorySupport"
+        },
+        {
+          "name": "threadContentionMonitoringSupport"
+        }
+      ]
+    },
+    {
+      "type": "sun.misc.Unsafe",
+      "fields": [
+        {
+          "name": "theUnsafe"
+        }
+      ],
+      "methods": [
+        {
+          "name": "invokeCleaner",
+          "parameterTypes": [
+            "java.nio.ByteBuffer"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.misc.VM"
+    },
+    {
+      "type": "sun.nio.ch.SelectorImpl",
+      "fields": [
+        {
+          "name": "publicSelectedKeys"
+        },
+        {
+          "name": "selectedKeys"
+        }
+      ]
+    },
+    {
+      "type": "sun.reflect.annotation.AnnotationType"
+    },
+    {
+      "type": "sun.security.provider.NativePRNG",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.security.SecureRandomParameters"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.SHA",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "sun.text.resources.cldr.FormatData"
+    },
+    {
+      "type": {
+        "proxy": [
+          "io.helidon.security.SecurityContext",
+          "org.glassfish.hk2.api.ProxyCtl"
+        ]
+      }
+    },
+    {
+      "type": {
+        "proxy": [
+          "io.helidon.webserver.ServerRequest",
+          "org.glassfish.hk2.api.ProxyCtl"
+        ]
+      }
+    },
+    {
+      "type": {
+        "proxy": [
+          "javax.ws.rs.core.UriInfo",
+          "org.glassfish.hk2.api.ProxyCtl"
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "glob": "META-INF/beans.xml"
+    },
+    {
+      "glob": "META-INF/helidon/media-types.properties"
+    },
+    {
+      "glob": "META-INF/helidon/serial-config.properties"
+    },
+    {
+      "glob": "META-INF/jandex.idx"
+    },
+    {
+      "glob": "META-INF/microprofile-config.properties"
+    },
+    {
+      "glob": "META-INF/openapi.json"
+    },
+    {
+      "glob": "META-INF/openapi.yaml"
+    },
+    {
+      "glob": "META-INF/openapi.yml"
+    },
+    {
+      "glob": "META-INF/org.jboss.weld.enableUnsafeProxies"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.common.context.spi.DataPropagationProvider"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.common.media.type.spi.MediaTypeDetector"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.config.mp.spi.MpConfigFilter"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.config.spi.ConfigFilter"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.config.spi.ConfigMapperProvider"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.config.spi.ConfigParser"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.metrics.api.spi.RegistryFactoryProvider"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.metrics.serviceapi.spi.MetricsSupportProvider"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.microprofile.health.HealthCheckProvider"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.security.abac.policy.spi.PolicyExecutorService"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.security.providers.abac.spi.AbacValidatorService"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.security.providers.common.spi.AnnotationAnalyzer"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.security.spi.SecurityProviderService"
+    },
+    {
+      "glob": "META-INF/services/io.helidon.tracing.spi.TracerProvider"
+    },
+    {
+      "glob": "META-INF/services/io.opentracing.Tracer"
+    },
+    {
+      "glob": "META-INF/services/io.opentracing.contrib.tracerresolver.TracerFactory"
+    },
+    {
+      "glob": "META-INF/services/io.opentracing.contrib.tracerresolver.TracerResolver"
+    },
+    {
+      "glob": "META-INF/services/java.net.spi.InetAddressResolverProvider"
+    },
+    {
+      "glob": "META-INF/services/java.nio.channels.spi.SelectorProvider"
+    },
+    {
+      "glob": "META-INF/services/java.util.spi.ResourceBundleControlProvider"
+    },
+    {
+      "glob": "META-INF/services/javax.enterprise.inject.spi.Extension"
+    },
+    {
+      "glob": "META-INF/services/javax.json.spi.JsonProvider"
+    },
+    {
+      "glob": "META-INF/services/javax.ws.rs.container.DynamicFeature"
+    },
+    {
+      "glob": "META-INF/services/javax.ws.rs.core.Feature"
+    },
+    {
+      "glob": "META-INF/services/javax.ws.rs.ext.RuntimeDelegate"
+    },
+    {
+      "glob": "META-INF/services/javax.xml.stream.XMLInputFactory"
+    },
+    {
+      "glob": "META-INF/services/javax.xml.validation.SchemaFactory"
+    },
+    {
+      "glob": "META-INF/services/org.eclipse.microprofile.config.spi.ConfigProviderResolver"
+    },
+    {
+      "glob": "META-INF/services/org.eclipse.microprofile.config.spi.ConfigSource"
+    },
+    {
+      "glob": "META-INF/services/org.eclipse.microprofile.config.spi.ConfigSourceProvider"
+    },
+    {
+      "glob": "META-INF/services/org.eclipse.microprofile.config.spi.Converter"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.hk2.extension.ServiceLocatorGenerator"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.ext.cdi1x.internal.spi.BeanManagerProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.ext.cdi1x.internal.spi.InjectionManagerStore"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.ext.cdi1x.spi.Hk2CustomBoundTypesProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.internal.inject.InjectionManagerFactory"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.internal.spi.AutoDiscoverable"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.internal.spi.ForcedAutoDiscoverable"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.model.internal.spi.ParameterServiceProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.server.spi.ComponentProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.server.spi.ContainerProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.server.spi.ExternalRequestScope"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.spi.ExternalConfigurationProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.spi.HeaderDelegateProvider"
+    },
+    {
+      "glob": "META-INF/services/org.jboss.logging.LoggerProvider"
+    },
+    {
+      "glob": "META-INF/services/org.jboss.weld.bootstrap.api.Service"
+    },
+    {
+      "glob": "META-INF/services/org.jboss.weld.environment.deployment.discovery.BeanArchiveHandler"
+    },
+    {
+      "glob": "META-INF/services/org.jboss.weld.environment.deployment.discovery.DiscoveryStrategy"
+    },
+    {
+      "glob": "META-INF/services/org.jboss.weld.module.WeldModule"
+    },
+    {
+      "glob": "application.yaml"
+    },
+    {
+      "glob": "beans_1_0.xsd"
+    },
+    {
+      "glob": "beans_1_1.xsd"
+    },
+    {
+      "glob": "beans_2_0.xsd"
+    },
+    {
+      "glob": "config-profile.conf"
+    },
+    {
+      "glob": "config-profile.json"
+    },
+    {
+      "glob": "config-profile.properties"
+    },
+    {
+      "glob": "config-profile.yaml"
+    },
+    {
+      "glob": "config-profile.yml"
+    },
+    {
+      "glob": "io/helidon/common/media/type/default-media-types.properties"
+    },
+    {
+      "glob": "jndi.properties"
+    },
+    {
+      "glob": "logging-test.properties"
+    },
+    {
+      "glob": "logging.properties"
+    },
+    {
+      "glob": "meta-config.conf"
+    },
+    {
+      "glob": "meta-config.json"
+    },
+    {
+      "glob": "meta-config.properties"
+    },
+    {
+      "glob": "meta-config.yaml"
+    },
+    {
+      "glob": "meta-config.yml"
+    },
+    {
+      "glob": "mp-meta-config.properties"
+    },
+    {
+      "glob": "mp-meta-config.yaml"
+    },
+    {
+      "glob": "org.jboss.weld.bootstrap.properties"
+    },
+    {
+      "glob": "org.jboss.weld.executor.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/ext/cdi1x/internal/localization.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/ext/cdi1x/internal/localization_ru.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/ext/cdi1x/internal/localization_ru_RU.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/internal/build.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/internal/localization.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/internal/localization_ru.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/internal/localization_ru_RU.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/server/internal/localization.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/server/internal/localization_ru.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/server/internal/localization_ru_RU.properties"
+    },
+    {
+      "glob": "weld-build.properties"
+    },
+    {
+      "glob": "weld.properties"
+    },
+    {
+      "glob": "weld_1_1.xsd"
+    },
+    {
+      "module": "java.logging",
+      "glob": "sun/util/logging/resources/logging_ru.properties"
+    },
+    {
+      "module": "java.logging",
+      "glob": "sun/util/logging/resources/logging_ru_RU.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xerces/internal/impl/msg/XMLSchemaMessages.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xerces/internal/impl/msg/XMLSchemaMessages_ru.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xerces/internal/impl/msg/XMLSchemaMessages_ru_RU.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xerces/internal/impl/xpath/regex/message.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xerces/internal/impl/xpath/regex/message_ru.properties"
+    },
+    {
+      "module": "java.xml",
+      "glob": "com/sun/org/apache/xerces/internal/impl/xpath/regex/message_ru_RU.properties"
+    },
+    {
+      "bundle": "com.sun.org.apache.xerces.internal.impl.msg.XMLSchemaMessages"
+    },
+    {
+      "bundle": "com.sun.org.apache.xerces.internal.impl.xpath.regex.message"
+    },
+    {
+      "bundle": "org.glassfish.jersey.ext.cdi1x.internal.localization"
+    },
+    {
+      "bundle": "org.glassfish.jersey.internal.localization"
+    },
+    {
+      "bundle": "org.glassfish.jersey.server.internal.localization"
+    },
+    {
+      "bundle": "sun.util.logging.resources.logging"
+    }
+  ]
+}
