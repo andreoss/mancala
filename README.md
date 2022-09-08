@@ -3,7 +3,7 @@
 # Mancala
 [![Hits-of-Code](https://hitsofcode.com/github/andreoss/mancala)](https://hitsofcode.com/view/github/andreoss/mancala)
 [![codecov](https://codecov.io/gh/andreoss/mancala/branch/master/graph/badge.svg)](https://codecov.io/gh/andreoss/mancala)
-[![Build Status](https://travis-ci.com/andreoss/mancala.svg?branch=master)](https://travis-ci.com/andreoss/mancala)
+[![Build Status](https://app.travis-ci.com/andreoss/mancala.svg?branch=master)](https://app.travis-ci.com/andreoss/mancala)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=andreoss_mancala&metric=alert_status)](https://sonarcloud.io/dashboard?id=andreoss_mancala)
 
 Simple implementation of [Mancala](https://en.wikipedia.org/wiki/Mancala).
