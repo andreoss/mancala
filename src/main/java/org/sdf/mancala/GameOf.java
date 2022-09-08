@@ -3,7 +3,7 @@ package org.sdf.mancala;
 import java.util.concurrent.atomic.AtomicBoolean;
 import lombok.RequiredArgsConstructor;
 import org.cactoos.iterable.Mapped;
-import org.cactoos.scalar.SumOf;
+import org.cactoos.number.SumOf;
 
 /**
  * Game.
